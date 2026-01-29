@@ -24,14 +24,10 @@
 ## Структура проєкту
 
 fishing-shop/
-│
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── menu.js
-└── assets/
-  └── img/
+index.html
+css/style.css
+js/menu.js
+assets/img/
 
 ## Адаптивність
 
