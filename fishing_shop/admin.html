@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Адміністратор</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header admin-header">
+  <div class="logo">🛠 Admin Panel</div>
+  <nav>
+    <a href="#">Товари</a>
+    <a href="#">Користувачі</a>
+    <a href="index.html">Вийти</a>
+  </nav>
+</header>
+
+<main class="main">
+  <h2>Управління товарами (CRUD)</h2>
+
+  <!-- CREATE -->
+  <section class="box">
+    <h3>Додати товар</h3>
+    <input type="text" placeholder="Назва товару">
+    <input type="number" placeholder="Ціна">
+    <button>Додати</button>
+  </section>
+
+  <!-- READ -->
+  <section class="box">
+    <h3>Список товарів</h3>
+    <table>
+      <tr>
+        <th>Назва</th>
+        <th>Ціна</th>
+        <th>Дії</th>
+      </tr>
+      <tr>
+        <td>Вудка Shimano</td>
+        <td>2500 грн</td>
+        <td>
+          <button>Редагувати</button>
+          <button class="danger">Видалити</button>
+        </td>
+      </tr>
+    </table>
+  </section>
+</main>
+
+</body>
+</html>
