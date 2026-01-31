@@ -24,3 +24,19 @@
 
 </body>
 </html>
+
+<script>
+  fetch("http://localhost:3000/auth/login", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    email: "admin@mail.com",
+    password: "123456"
+  })
+})
+.then(res => res.json())
+.then(data => {
+  localStorage.setItem("token", data.token);
+  localStorage.setItem("role", data.role);
+});
+</script>
