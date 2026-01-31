@@ -1,0 +1,10 @@
+Структура серверної частини:
+backend:
+- server.js
+- config:
+  - db.js
+- routes:
+  - products.js
+- controllers:
+  - productsController.js
+- package.json
