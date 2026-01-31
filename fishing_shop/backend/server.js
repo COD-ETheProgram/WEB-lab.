@@ -1,15 +1,18 @@
-const express = require('express');
-const cors = require('cors');
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
 
-const productRoutes = require('./routes/products');
+const authRoutes = require("./routes/auth.routes");
+const productRoutes = require("./routes/products.routes");
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/products', productRoutes);
+app.use("/auth", authRoutes);
+app.use("/products", productRoutes);
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+  console.log("Server started on port 3000");
 });
